@@ -13,8 +13,15 @@ public class HomeController {
     }
 
     @GetMapping("/user")
-    public String controller1(){
-        return "Hi user";
+    public String controller1()
+    {
+        return ("<h1> Hi user</h1>");
+    }
+
+    @GetMapping("/admin")
+    public String controller2()
+    {
+        return ("<h1> Hi Admin </h1>");
     }
 
 }
